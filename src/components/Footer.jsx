@@ -25,22 +25,28 @@ const Footer = () => {
           <h3>Social Links</h3>
           <ul>
             <li>
-              <a href="" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/bikal-adhikari/"
+                target="_blank"
+              >
                 LinkedIN
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a href="https://github.com/Bikal-Adhikari" target="_blank">
                 Github
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=100076564991624"
+                target="_blank"
+              >
                 Facebook
               </a>
             </li>
             <li>
-              <a href="" target="_blank">
+              <a href="https://youtube.com" target="_blank">
                 Youtube
               </a>
             </li>

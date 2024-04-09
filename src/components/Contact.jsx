@@ -13,7 +13,7 @@ const Contact = () => {
         <a href="https://github.com/Bikal-Adhikari" target="_blank">
           <i className="fa-brands fa-github"></i>
         </a>
-        <a href="">
+        <a href="https://youtube.com">
           {" "}
           <i className="fa-brands fa-youtube"></i>
         </a>
