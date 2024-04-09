@@ -4,6 +4,7 @@ import projectImg from "./assets/project.png";
 import Banner from "./components/Banner.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
+import Project from "./components/Project.jsx";
 import Skills from "./components/Skills.jsx";
 function App() {
   return (
@@ -20,92 +21,8 @@ function App() {
         <Hero mainImg={mainImg} />
         <Banner />
         <Skills />
+        <Project projectImg={projectImg} />
 
-        {/* <!-- my recent work --> */}
-        <section className="projects" id="projects">
-          <h2 className="title">
-            <span>My Projects</span>
-          </h2>
-
-          <div className="grid project-container container">
-            <div className="project-card">
-              <div className="top">
-                <img src={projectImg} alt="" width="100%" height="auto" />
-              </div>
-              <div className="bottom container">
-                <div className="links">
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-chrome"></i>{" "}
-                  </a>
-                </div>
-                <h3>Personal Portfolio</h3>
-                <p>TechStack: HTML, CSS, JavaScript, React</p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="top">
-                <img src={projectImg} alt="" width="100%" height="auto" />
-              </div>
-              <div className="bottom container">
-                <div className="links">
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-chrome"></i>{" "}
-                  </a>
-                </div>
-                <h3>Personal Portfolio</h3>
-                <p>TechStack: HTML, CSS, JavaScript, React</p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="top">
-                <img src={projectImg} alt="" width="100%" height="auto" />
-              </div>
-              <div className="bottom container">
-                <div className="links">
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-chrome"></i>{" "}
-                  </a>
-                </div>
-                <h3>Personal Portfolio</h3>
-                <p>TechStack: HTML, CSS, JavaScript, React</p>
-              </div>
-            </div>
-            <div className="project-card">
-              <div className="top">
-                <img src={projectImg} alt="" width="100%" height="auto" />
-              </div>
-              <div className="bottom container">
-                <div className="links">
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="">
-                    {" "}
-                    <i className="fa-brands fa-chrome"></i>{" "}
-                  </a>
-                </div>
-                <h3>Personal Portfolio</h3>
-                <p>TechStack: HTML, CSS, JavaScript, React</p>
-              </div>
-            </div>
-          </div>
-        </section>
         {/* <!-- about me  --> */}
         <section className="about" id="about">
           <h2 className="title">
