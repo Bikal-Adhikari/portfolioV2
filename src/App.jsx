@@ -1,6 +1,7 @@
 import "./App.css";
 import mainImg from "./assets/423619648_3603663076543893_2299142157477955626_n-removebg-preview.png";
 import projectImg from "./assets/project.png";
+import Header from "./components/Header";
 function App() {
   return (
     <>
@@ -12,38 +13,7 @@ function App() {
       <div className="wrapper">
         {/* <!-- for dark mode toggler  --> */}
 
-        {/* <!-- navbar  --> */}
-        <header>
-          <div className="header container flex">
-            <div className="logo flex">
-              <div className="joti-one-regular">Bikal</div>
-              <div className="line">Soft. Engineer</div>
-            </div>
-            <label htmlFor="hamburgerMenu">
-              <i className="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="hamburgerMenu" />
-            <div className="menu">
-              <ul className="flex navigation">
-                <li>
-                  <a href="#header">Home</a>
-                </li>
-                <li>
-                  <a href="#skills">Skills</a>
-                </li>
-                <li>
-                  <a href="#projects">Projects</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </header>
+        <Header />
 
         {/* <!-- hero  --> */}
         <section className="hero-section container" id="header">
