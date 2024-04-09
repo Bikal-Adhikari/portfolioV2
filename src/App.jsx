@@ -3,6 +3,7 @@ import mainImg from "./assets/423619648_3603663076543893_2299142157477955626_n-r
 import projectImg from "./assets/project.png";
 import Aboutme from "./components/Aboutme.jsx";
 import Banner from "./components/Banner.jsx";
+import Contact from "./components/Contact.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Project from "./components/Project.jsx";
@@ -24,38 +25,8 @@ function App() {
         <Skills />
         <Project projectImg={projectImg} />
         <Aboutme mainImg={mainImg} />
+        <Contact />
 
-        <section className="container contact" id="contact">
-          <h2 className="title">
-            <span>Contact</span>
-          </h2>
-          <div className="flex social">
-            <a href="">
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              {" "}
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-            <a href="tel:0451677236">
-              <i className="fa-solid fa-mobile"></i>
-            </a>
-          </div>
-          <h3>OR</h3>
-          <div className="flex">
-            <a href="mailto:real@email.com" className="email-section">
-              <div className="email flex">
-                <span>yourEmail@gmail.com</span>
-                <div className="flex send">
-                  <i className="fa-solid fa-paper-plane"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-        </section>
         {/* <!-- footer  --> */}
 
         <footer className="flex footer">
