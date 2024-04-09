@@ -1,0 +1,502 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* root variable  */
+:root {
+  --color-orange: orangered;
+  --color-dark: #2a2a2a;
+
+  --body-bg: rgb(188, 230, 253);
+  --text-color: var(--color-dark);
+  --border-color: var(--color-dark);
+
+  /* for dark mode  */
+  --dark-bg: var(--color-dark);
+  --dark-text-color: #fff;
+  --dark-border-color: #fff;
+
+  --shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.625);
+}
+
+.joti-one-regular {
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.title span {
+  border-bottom: 3px solid var(--color-orange);
+  /* padding: 0 3rem; */
+}
+
+/* <!-- for dark mode toggler  --> */
+
+.dark-mode-toggler {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
+
+.dark-mode-toggler:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+/* <!-- navbar  --> */
+
+header {
+  box-shadow: var(--shadow);
+
+  position: sticky;
+  top: 0;
+  background: var(--body-bg);
+  margin-bottom: 3rem;
+}
+
+header .header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+/* .logo > div:nth-child(1) */
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.line::before {
+  content: "";
+  background: var(--color-orange);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 35%;
+}
+
+.navigation {
+  list-style: none;
+  font-weight: bold;
+}
+
+.navigation li:hover {
+  color: var(--color-orange);
+  transition: all 0.3s;
+}
+
+#darkMode {
+  display: none;
+}
+/* making dark mode working  */
+
+#darkMode:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  --text-color: var(--dark-text-color);
+  --border-color: var(--dark-border-color);
+}
+
+/* hero  */
+.hero-section {
+  margin-top: 5rem;
+  max-height: 60vh;
+}
+
+.hero {
+  background: var(--color-orange);
+  grid-template-areas: "left right";
+  padding: 2rem 2rem;
+}
+
+.left {
+  grid-area: left;
+  flex-direction: column;
+  margin-left: 10vw;
+  justify-content: center;
+}
+
+.left div span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.left .tag {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+.left button {
+  background: var(--dark-bg);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.right {
+  grid-area: right;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -5rem;
+}
+
+.right img {
+  height: 80%;
+  width: 50%;
+}
+/* <!-- banner --> */
+
+.banner {
+  margin-top: 7rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+
+.banner .info-content div span {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+.banner .info-content div p {
+  color: var(--color-orange);
+}
+
+.banner .icon-container {
+  background: var(--color-orange);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.banner .icon-container i {
+  font-size: 3rem;
+  color: #fff;
+}
+/* <!-- skills --> */
+
+.skills {
+  padding-top: 7rem;
+}
+
+.skills-container {
+  font-size: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: var(--shadow); */
+}
+
+.skills-container > div i {
+  font-size: 3rem;
+}
+/* <!-- my recent work --> */
+.projects {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+.projects .project-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+}
+
+.project-card .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  letter-spacing: 1rem;
+}
+/* <!-- about me  --> */
+
+/* .about-me {
+    background: greenyellow;
+  }
+  
+  .about-me .left span {
+    font-weight: bolder;
+  } */
+
+.about {
+  background: rgba(153, 205, 50, 0.751);
+  padding: 7rem 0;
+}
+
+.about .about-content {
+}
+
+.about .myImg img {
+  width: 50%;
+  height: 80vh;
+
+  /* justify-content: center; */
+}
+
+.about .my-bio h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 5px;
+}
+
+.about .my-bio p:nth-child(4) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about .my-bio .tag {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about .my-bio .tag + div > span {
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+
+.about .my-bio .tag + div > span:hover {
+  cursor: pointer;
+  background: grey;
+  transition: all 0.3s;
+}
+
+/* <!-- contact--> */
+
+/* .contact .contact-content {
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+  
+  .contact .contact-content .icons {
+    font-size: 3rem;
+  }
+  
+  .contact .contact-content .email {
+    background: #000;
+    border-radius: 20px;
+    color: #fff;
+    align-items: center;
+  }
+  .contact .contact-content p {
+    justify-content: center;
+  }
+  .contact .contact-content .email i {
+    background-color: red;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    align-items: center;
+  } */
+
+.contact {
+  padding: 7rem 0;
+  width: 400px;
+  margin: auto;
+}
+
+.contact .social {
+  justify-content: space-between;
+  font-size: 4rem;
+}
+
+.contact h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact .email-section {
+  background: black;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow);
+}
+
+.contact .email-section .email {
+  align-items: center;
+}
+
+.contact .email-section .send {
+  background: var(--color-orange);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- footer  --> */
+footer {
+  background: #000;
+  color: white;
+  padding: 3rem;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.footer .top {
+  justify-content: space-around;
+}
+
+.goup {
+  font-size: 3rem;
+
+  width: 70px;
+  height: 70px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  padding-top: 7rem;
+}
+
+/* hamburgerMenu  */
+
+[for="hamburgerMenu"],
+#hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+/* media query for mobile devices  */
+@media (max-width: 760px) {
+  .hero {
+    grid-template-areas:
+      "right"
+      "left";
+  }
+  .right {
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    padding-top: 7rem;
+    align-items: center;
+    margin-left: 0;
+  }
+  .right img {
+    width: 250px;
+  }
+
+  .banner {
+    flex-direction: column;
+    margin-top: 500px;
+
+    align-items: flex-start;
+    padding-left: 20%;
+  }
+
+  .info-divider {
+    display: none;
+  }
+
+  .projects .project-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .about .myImg {
+      width: 60%;
+    } */
+
+  /* Menu  */
+  .menu {
+    /* display: none; */
+    position: absolute;
+    width: 250px;
+    top: 3.7rem;
+    left: 100vw;
+
+    background: var(--body-bg);
+    height: 100vh;
+    box-shadow: var(--shadow);
+    transition: left 0.5s;
+  }
+
+  .menu .navigation {
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  [for="hamburgerMenu"] {
+    display: block;
+  }
+
+  #hamburgerMenu:checked + .menu {
+    left: calc(100vw - 250px);
+  }
+}
