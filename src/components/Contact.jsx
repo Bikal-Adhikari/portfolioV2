@@ -7,10 +7,10 @@ const Contact = () => {
         <span>Contact</span>
       </h2>
       <div className="flex social">
-        <a href="">
+        <a href="https://www.linkedin.com/in/bikal-adhikari/" target="_blank">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="">
+        <a href="https://github.com/Bikal-Adhikari" target="_blank">
           <i className="fa-brands fa-github"></i>
         </a>
         <a href="">
@@ -23,9 +23,9 @@ const Contact = () => {
       </div>
       <h3>OR</h3>
       <div className="flex">
-        <a href="mailto:real@email.com" className="email-section">
+        <a href="mailto:bikaladhikari5@gmail.com" className="email-section">
           <div className="email flex">
-            <span>yourEmail@gmail.com</span>
+            <span>bikaladhikari5@gmail.com</span>
             <div className="flex send">
               <i className="fa-solid fa-paper-plane"></i>
             </div>
