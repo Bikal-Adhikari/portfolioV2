@@ -4,6 +4,7 @@ import projectImg from "./assets/project.png";
 import Aboutme from "./components/Aboutme.jsx";
 import Banner from "./components/Banner.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Project from "./components/Project.jsx";
@@ -26,58 +27,7 @@ function App() {
         <Project projectImg={projectImg} />
         <Aboutme mainImg={mainImg} />
         <Contact />
-
-        {/* <!-- footer  --> */}
-
-        <footer className="flex footer">
-          <div className="flex top container">
-            <div className="links">
-              <h3>Links</h3>
-              <ul>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Skills</a>
-                </li>
-                <li>
-                  <a href="">Projects</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div className="socials">
-              <h3>Social Links</h3>
-              <ul>
-                <li>
-                  <a href="" target="_blank">
-                    LinkedIN
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    Facebook
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    Youtube
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="bottom">
-            &copy; All right reserved. Made by Bikal Adhikari.
-          </div>
-        </footer>
+        <Footer />
 
         <a href="#header" className="flex goup">
           <i className="fa-solid fa-angle-up"></i>
