@@ -7,6 +7,7 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Project from "./components/Project.jsx";
 import Skills from "./components/Skills.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -20,17 +21,27 @@ function App() {
         {/* <!-- for dark mode toggler  --> */}
 
         <Header />
-        <Hero />
-        <Banner />
-        <Skills />
-        <Project />
-        <Aboutme />
-        <Contact />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Banner />
+              </>
+            }
+          />
+
+          <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Project />} />
+          <Route path="about-me" element={<Aboutme />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
         <Footer />
 
-        <a href="#header" className="flex goup">
+        {/* <a href="#header" className="flex goup">
           <i className="fa-solid fa-angle-up"></i>
-        </a>
+        </a> */}
       </div>
     </>
   );
