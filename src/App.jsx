@@ -1,6 +1,7 @@
 import "./App.css";
 import mainImg from "./assets/423619648_3603663076543893_2299142157477955626_n-removebg-preview.png";
 import projectImg from "./assets/project.png";
+import Banner from "./components/Banner.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 function App() {
@@ -16,39 +17,7 @@ function App() {
 
         <Header />
         <Hero mainImg={mainImg} />
-
-        {/* <!-- banner --> */}
-        <section className="flex banner container">
-          <div className="flex info-content">
-            <div className="flex icon-container">
-              <i className="fa-solid fa-award"></i>
-            </div>
-            <div>
-              <span>IT</span>
-              <p>Graduation</p>
-            </div>
-          </div>
-          <div className="flex info-content">
-            <div className="flex icon-container">
-              <i className="fa-solid fa-award"></i>
-            </div>
-            <div className="info-divider"></div>
-            <div>
-              <span>5+ Projects</span>
-              <p>Completed</p>
-            </div>
-          </div>
-          <div className="flex info-content">
-            <div className="flex icon-container">
-              <i className="fa-solid fa-award"></i>
-            </div>
-            <div className="info-divider"></div>
-            <div>
-              <span>1+ year</span>
-              <p>Coding Experience</p>
-            </div>
-          </div>
-        </section>
+        <Banner />
 
         {/* <!-- skills --> */}
         <section className="skills" id="skills">
