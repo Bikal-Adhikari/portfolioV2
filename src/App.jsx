@@ -4,6 +4,7 @@ import projectImg from "./assets/project.png";
 import Banner from "./components/Banner.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
+import Skills from "./components/Skills.jsx";
 function App() {
   return (
     <>
@@ -18,45 +19,7 @@ function App() {
         <Header />
         <Hero mainImg={mainImg} />
         <Banner />
-
-        {/* <!-- skills --> */}
-        <section className="skills" id="skills">
-          <h2 className="title">
-            <span>Skills</span>
-          </h2>
-
-          <div className="container flex skills-container">
-            <div>
-              <i
-                className="fa-brands fa-html5"
-                style={{ color: "orangered" }}
-              ></i>
-              <span>HTML</span>
-            </div>
-            <div>
-              <i
-                className="fa-brands fa-css3-alt"
-                style={{ color: "blue" }}
-              ></i>
-              <span>CSS</span>
-            </div>
-            <div>
-              <i
-                className="fa-brands fa-js"
-                style={{ color: "rgba(209, 209, 16, 0.774)" }}
-              ></i>
-              <span>JavaScript</span>
-            </div>
-            <div>
-              <i className="fa-brands fa-github"></i>
-              <span>GitHub</span>
-            </div>
-            <div>
-              <i className="fa-brands fa-figma" style={{ color: "purple" }}></i>
-              <span>Figma</span>
-            </div>
-          </div>
-        </section>
+        <Skills />
 
         {/* <!-- my recent work --> */}
         <section className="projects" id="projects">
