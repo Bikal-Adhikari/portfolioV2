@@ -1,6 +1,8 @@
 import React from "react";
 
-const Project = ({ projectImg }) => {
+import projectImg from "../assets/project.png";
+
+const Project = () => {
   return (
     <section className="projects" id="projects">
       <h2 className="title">

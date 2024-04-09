@@ -1,6 +1,7 @@
 import React from "react";
+import aboutImg from "../assets/423619648_3603663076543893_2299142157477955626_n-removebg-preview.png";
 
-const Aboutme = ({ mainImg }) => {
+const Aboutme = () => {
   return (
     <section className="about" id="about">
       <h2 className="title">
@@ -8,7 +9,7 @@ const Aboutme = ({ mainImg }) => {
       </h2>
       <div className="flex container about-content">
         <div className="flex myImg">
-          <img src={mainImg} alt="Bikal" />
+          <img src={aboutImg} alt="Bikal" />
         </div>
         <div className="my-bio container">
           <h2 className="joti-one-regular">Bikal Adhikari</h2>
